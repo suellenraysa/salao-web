@@ -1,0 +1,281 @@
+.relatorio-servico .buttons{
+    border: none;
+    background-color: #610d75;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.relatorio-servico.main-container{
+    width: 83%;
+    padding: 90px 10px 0 0;
+    margin-left: 17%;
+}
+
+.relatorio-servico.main-container h1{
+    text-align: center;
+}
+
+.relatorio-servico.main-container .info-select{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.relatorio-servico.main-container .info-select .spn-titulo{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a346a;
+}
+
+.relatorio-servico.main-container .info-select label{
+    display: inline-block;
+    width: 100%;
+}
+
+.relatorio-servico.main-container .info-select .select-servico,
+.relatorio-servico.main-container .info-select .select-profissional,
+.relatorio-servico.main-container .info-select .select-data{
+    padding: 20px;
+}
+
+.relatorio-servico.main-container .info-select .spn-titulo + select{
+    display: inline-block;
+    width: calc(100% - 270px);
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.relatorio-servico.main-container .info-select .select-data {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.relatorio-servico.main-container .info-select .select-data  label{
+    display: inline-block;
+    width: 33%;
+    min-width: 230px;
+    margin: 10px 0;
+}
+
+.relatorio-servico.main-container .info-select .select-data  label span{
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.relatorio-servico.main-container .info-select .select-data label .react-datepicker-wrapper{
+    width: 74%;
+}
+
+.relatorio-servico.main-container .info-select .select-data label .react-datepicker-wrapper input{
+    width: 100%;
+}
+
+.relatorio-servico.main-container .info-select .select-data  label input{
+    display: inline-block;
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.relatorio-servico.main-container .info-select .select-data  .buttons{
+    margin: 5px 0;
+    padding: 10px 50px;
+}
+
+.relatorio-servico.main-container .info-select .select-data  .buttons:hover{
+    margin: 5px 0;
+    padding: 10px 46px;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px #abc;
+}
+
+.buttons-export{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.buttons-export label{
+    margin: 0 50px;
+}
+
+.buttons-export .buttons{
+    padding: 10px 30px;
+}
+
+.buttons-export .buttons:hover{
+    padding: 10px 28px;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px #abc;
+}
+
+.buttons-export label .material-icons{
+    font-size: 38px;
+}
+
+.buttons-export label span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transform: translateY(10px);
+}
+
+.buttons-export label span img{
+    height: 100%;
+    width: 100%;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    .relatorio-servico.main-container{
+        width: 100%;
+        padding: 10px;
+        margin-left: unset      ;
+    }
+
+    .relatorio-servico.main-container h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .relatorio-servico.main-container .info-select {
+        width: 100%;
+        display: unset;
+    }
+
+    .relatorio-servico.main-container .info-select .select-servico, 
+    .relatorio-servico.main-container .info-select .select-profissional, 
+    .relatorio-servico.main-container .info-select .select-data {
+        padding: 10px 0;
+    }
+
+    .relatorio-servico.main-container .info-select label {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .relatorio-servico.main-container .info-select .spn-titulo {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        color: #6a346a;
+    }
+
+    .relatorio-servico.main-container .info-select .spn-titulo + select {
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: transparent;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data label {
+        display: inline-block;
+        width: 100%;
+        min-width: 230px;
+        margin: 10px 0;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data label span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data label input {
+        display: inline-block;
+        width: calc(100% - 70px);
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data .buttons {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .buttons-export {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .buttons-export label {
+        margin: 10px 0;
+        display: block;
+        width: 100%;
+    }
+
+    .buttons-export .buttons {
+        padding: 12px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px){
+    .relatorio-servico.main-container{
+        width: 100%;
+        padding: 10px;
+        margin-left: unset      ;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px){
+    .relatorio-servico.main-container{
+        width: 76%;
+        padding: 90px 10px 0 0;
+        margin-left: 320px;
+    }
+
+    .relatorio-servico.main-container .info-select {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .relatorio-servico.main-container .info-select .select-servico, 
+    .relatorio-servico.main-container .info-select .select-profissional, 
+    .relatorio-servico.main-container .info-select .select-data {
+        padding: 10px;
+    }
+
+    .relatorio-servico.main-container .info-select .spn-titulo + select {
+        width: calc(100%);
+    }
+
+    .relatorio-servico.main-container .info-select .select-data {
+        display: unset;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data label {
+        width: 50%;
+    }
+
+    .relatorio-servico.main-container .info-select .select-data label input {
+        width: calc(100% - 45px);
+    }
+
+    .relatorio-servico.main-container .info-select .select-data .buttons {
+        margin: 10px 0;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+}

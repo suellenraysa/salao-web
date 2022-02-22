@@ -1,0 +1,88 @@
+.menu-lateral{
+    display: block;
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    background: #6a346a;
+    padding: 90px 0;
+}
+
+.menu-lateral ul{
+    list-style: none;
+    width: inherit;
+}
+
+.menu-lateral ul li{
+    display: block;
+    position: relative;
+}
+
+.menu-lateral ul li:hover
+{
+    background: #e000e0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-lateral li span{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 15px 0;
+    transform: translateY(4px);
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu-lateral ul li a{
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    width: calc(100% - 44px);
+}
+
+.menu-lateral ul li button{
+    display: inline-block;
+    width: calc(100% - 44px);
+    padding-left: 15px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-lateral ul li:hover button{
+    font-weight: bold;
+}
+
+main .menu-lateral li #dropCadastro, 
+main .menu-lateral li #dropRelatorio{
+    display: none;
+}
+
+.menu-lateral li #dropCadastro.show, 
+.menu-lateral li #dropRelatorio.show{
+    display: block;
+    width: 100%;
+    background-color: #542154;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    main .menu-lateral{
+        display: none;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px){
+    main .menu-lateral{
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px){
+    main .menu-lateral{
+        width: 310px;
+    }
+}

@@ -1,0 +1,478 @@
+
+.main-container .container-conteudo{
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "calendario opcao"
+                         "calendario opcao";
+    gap: 10px;                         
+    font-weight:bold;
+}
+
+.main-container .container-conteudo .titulo{
+    grid-area: titulo;
+    display: block;
+    margin: 15px 0;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.react-calendar{
+    grid-area: calendario;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.react-calendar__navigation{
+    display: flex;
+    padding: 5px;
+    background-color: #610d75;
+}
+
+.react-calendar__navigation__arrow, .react-calendar__navigation__label{
+    margin: 2px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.react-calendar__navigation__arrow:hover, .react-calendar__navigation__label:hover{
+    background-color: #d281e6;
+    font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays{
+    text-align: center;
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    margin: 5px
+}
+
+.react-calendar__month-view__days > button, 
+.react-calendar__year-view__months > button, 
+.react-calendar__decade-view__years > button,
+.react-calendar__century-view__decades > button{
+    padding: 22px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.react-calendar__month-view__days > button:hover:not(:disabled), 
+.react-calendar__year-view__months > button:hover:not(:disabled),
+.react-calendar__decade-view__years > button:hover:not(:disabled),
+.react-calendar__century-view__decades >button:hover:not(:disabled){
+    background-color: #bc05d4;
+    color: #fff;
+}
+
+.react-calendar__month-view__days > button:focus, 
+.react-calendar__year-view__months > button:focus,
+.react-calendar__decade-view__years > button:focus,
+.react-calendar__century-view__decades >button:focus{
+    background-color: #bc05d4;
+    color: #fff;
+}
+
+.react-calendar__tile.react-calendar__tile--now.react-calendar__month-view__days__day{
+    background-color: #e49df5;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth{
+    background-color: #ddd;
+}
+
+.agendamento-form{
+    grid-area: opcao;
+    min-width: 580px;
+    /* padding: 10px; */
+    margin-right: 75px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.agendamento-form .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.agendamento-form .form label{
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+}
+.agendamento-form .form label:first-child{
+    margin: 0;
+}
+
+.agendamento-form .form label span{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.agendamento-form .form label select{
+    width: 65%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    outline: none;
+}
+
+.agendamento-form .form label input{
+    display: inline-block;
+    width: 65%;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 18px;
+}
+
+.agendamento-form .form button{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d281e6;
+    color: #fff;
+    font-size: 20px;
+    transition: all .224s ease;
+    display: grid;
+    cursor: pointer;
+}
+
+.agendamento-form .form button:hover{
+    background-color: #5d2e69;
+    font-weight: bold;
+}
+
+main .main-container .historico-agendamento{
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 0 0 15px;
+}
+
+main .main-container .historico-agendamento table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+main .main-container .historico-agendamento table thead th{
+    padding: 5px;
+    border: none;
+    background-color: #610d75;
+    color: #fff;
+}
+
+main .main-container .historico-agendamento table tbody tr{
+    border: none;
+}
+
+main .main-container .historico-agendamento table tbody td{
+    padding: 5px;
+}
+
+main .main-container .historico-agendamento table tbody td .material-icons.concluido{
+    color: #1fc829;
+}
+
+main .main-container .historico-agendamento table tbody td .material-icons.andamento{
+    color: #eeee2f;
+}
+
+main .main-container .historico-agendamento table tbody td .material-icons.cancelado{
+    color: #ff0000;
+}
+
+main .main-container .historico-agendamento table tbody tr:nth-child(even){
+    background-color: #ccc;
+}
+
+main .main-container .historico-agendamento table tbody .form{
+    display: grid;
+    place-content: center;
+}
+
+main .main-container .historico-agendamento table tbody .form button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ff0000;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #d8484e;
+    font-size: 20px;
+    transition: all .224s ease;
+    cursor: pointer;
+}
+
+main .main-container .historico-agendamento table tbody .form button:hover{
+    background-color: #d8484e;
+    color: #fff;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    main .main-container{
+        width: 100%;
+        padding: 10px 0;
+        margin-left: unset;
+    }
+
+    .main-container .container-conteudo{
+        display: grid;
+        grid-template-areas: unset;
+        grid-template-columns: 1fr;
+        padding: unset;
+        /* gap: 10px; */
+        font-weight:bold;
+    }
+    
+    .main-container .container-conteudo .titulo{
+        grid-area: unset;
+        font-size: 22px;        
+    }
+    
+    .react-calendar {
+        grid-area: unset;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        background-color: white;
+    }
+
+    .react-calendar__month-view__weekdays__weekday{
+        margin: 0;
+    }
+
+    .react-calendar__month-view__days > button, 
+    .react-calendar__year-view__months > button, 
+    .react-calendar__decade-view__years > button,
+    .react-calendar__century-view__decades > button{
+        padding: 15px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* .react-calendar__month-view__days > button::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #b1e648;
+    } */
+    
+    .main-container .container-conteudo .agendamento-form{
+        grid-area: unset;
+        min-width: 100%;
+        padding: 10px;
+        margin: 0;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    
+    .main-container .container-conteudo .agendamento-form .form label{
+        width: 100%;
+        margin: 10px 0;
+        position: relative;
+    }
+    
+    .main-container .container-conteudo .agendamento-form .form label span{
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .main-container .container-conteudo .agendamento-form .form label select,
+    .main-container .container-conteudo .agendamento-form .form label input{
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        position: unset;
+        text-align: left;
+    }
+    
+    main .main-container .historico-agendamento{
+        width: 100%;
+        margin: 20px auto;
+        padding: unset;
+        overflow-x: auto;
+    }
+    
+    main .main-container .historico-agendamento table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    main .main-container .historico-agendamento table thead th{
+        padding: 5px;
+        border: none;
+        background-color: #610d75;
+        color: #fff;
+    }
+    
+    main .main-container .historico-agendamento table tbody tr{
+        border: none;
+    }
+    
+    main .main-container .historico-agendamento table tbody td{
+        padding: 5px;
+    }
+    
+    main .main-container .historico-agendamento table tbody td .material-icons.concluido{
+        color: #1fc829;
+    }
+    
+    main .main-container .historico-agendamento table tbody td .material-icons.andamento{
+        color: #eeee2f;
+    }
+    
+    main .main-container .historico-agendamento table tbody td .material-icons.cancelado{
+        color: #ff0000;
+    }
+    
+    main .main-container .historico-agendamento table tbody tr:nth-child(even){
+        background-color: #ccc;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px){
+    main .main-container{
+        width: 100%;
+        padding: 10px;
+        margin: unset;
+    }
+
+    .main-container .container-conteudo .agendamento-form .form label span{
+        font-size: 14px;
+    }
+    
+    .main-container .container-conteudo .agendamento-form .form label select,
+    .main-container .container-conteudo .agendamento-form .form label input{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .main-container .historico-agendamento{
+        width: 100%;
+        margin: 10px 0;
+        padding: unset;
+    }
+    
+    .main-container .historico-agendamento table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px){
+    main .main-container{
+        width: unset;
+        padding: 80px 10px;
+        margin-left: 320px;
+    }
+
+    .main-container .container-conteudo{
+        height: unset;
+    }
+
+    .react-calendar {
+        grid-area: calendario;
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+        border-collapse: collapse;
+        background-color: white;
+    }
+
+    .react-calendar__month-view__weekdays__weekday{
+        margin: 0;
+    }
+
+    .react-calendar__month-view__days > button, 
+    .react-calendar__year-view__months > button, 
+    .react-calendar__decade-view__years > button,
+    .react-calendar__century-view__decades > button{
+        padding: 15px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* .react-calendar__month-view__days > button::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #b1e648;
+    } */
+
+    .main-container .container-conteudo .agendamento-form {
+        grid-area: opcao;
+        min-width: 465px;
+        /* padding: 10px; */
+        margin-right: 60px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    .main-container .container-conteudo .agendamento-form .form label {
+        margin: 2px 0;
+    }
+
+    .main-container .container-conteudo .agendamento-form .form label span {
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .main-container .container-conteudo .agendamento-form .form label select,    
+    .main-container .container-conteudo .agendamento-form .form label input{
+        width: 65%;
+        font-size: 16px;
+    }
+
+    main .main-container .historico-agendamento {
+        width: 100%;
+        margin: 20px auto;
+        padding: unset;
+    }
+}

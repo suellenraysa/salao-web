@@ -1,0 +1,269 @@
+.area-cliente.main-container{
+    width: 83%;
+    padding: 90px 10px 0 0;
+    margin-left: 330px;
+}
+
+.area-cliente.cadastro-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    min-width: 530px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.area-cliente.cadastro-form h1{
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.area-cliente.cadastro-form .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    place-items: center;
+}
+
+.area-cliente.cadastro-form .form label{
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.area-cliente.cadastro-form .form label span{
+    display: inline-block;
+    width: 25%;
+    margin: unset;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.area-cliente.cadastro-form .form label .react-datepicker-wrapper{
+    width: 74%;
+}
+
+.area-cliente.cadastro-form .form label .react-datepicker-wrapper input{
+    width: 100%;
+}
+
+.area-cliente.cadastro-form .form label input{
+    width: 74%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    outline: none;
+    
+    }
+    ::-webkit-input-placeholder {
+        color: #555;
+    }
+     
+    :-moz-placeholder { /* Firefox 18- */
+        color: #555;
+    }
+     
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: #555; 
+        
+    }
+     
+    :-ms-input-placeholder {  
+        color: #555; 
+    }
+
+.area-cliente.cadastro-form .form label input[type="date"]{
+    text-align: center;
+}
+
+.area-cliente.cadastro-form .form label select{
+    display: inline-block;
+    width: 74%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+}
+
+.area-cliente.cadastro-form .form .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+}
+
+.area-cliente.cadastro-form .buttons button{
+    display: grid;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d281e6;
+    color: #fff;
+    font-size: 20px;
+    transition: all .224s ease;
+    cursor: pointer;
+}
+
+.area-cliente.cadastro-form .buttons button:hover{
+    background-color: #5d2e69;
+    font-weight: bold;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    .area-cliente.main-container {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .area-cliente.cadastro-form {
+        display: flex;
+        flex-direction: column;
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .area-cliente.cadastro-form .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        place-items: center;
+    }
+
+    .area-cliente.cadastro-form .form label span {
+        display: block;
+        width: 100%;
+        margin: unset;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .area-cliente.cadastro-form .form label .react-datepicker-wrapper{
+        width: 100%;
+    }
+
+    .area-cliente.cadastro-form .form label input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #000;
+        font-size: 16px;
+        outline: none;
+        background-color: #fff;
+        border-radius: unset;
+        color: #000;
+    }
+
+    .area-cliente.cadastro-form .form label select {
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: #fff;
+        text-align: center;
+        font-size: 18px;
+        outline: none;
+    }
+
+    .area-cliente.cadastro-form .form .buttons {
+        display: grid;
+        grid-template-columns: none;
+        width: 100%;
+        grid-gap: 10px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px){
+    .area-cliente.main-container {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .area-cliente.cadastro-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .area-cliente.cadastro-form .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        place-items: center;
+    }
+
+    .area-cliente.cadastro-form .form label span {
+        display: block;
+        width: 100%;
+        margin: unset;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .area-cliente.cadastro-form .form label input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #000;
+        font-size: 16px;
+        outline: none;
+        background-color: #fff;
+        border-radius: unset;
+        color: #000;
+    }
+
+    .area-cliente.cadastro-form .form label select {
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: #fff;
+        text-align: center;
+        font-size: 18px;
+        outline: none;
+    }
+
+    .area-cliente.cadastro-form .form .buttons {
+        display: grid;
+        grid-template-columns: none;
+        width: 100%;
+        grid-gap: 10px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px){
+    .area-cliente.main-container {
+        width: unset;
+        padding: 90px 10px 0 0;
+        margin-left: 330px;
+    }
+
+    .area-cliente.cadastro-form {
+        width: 60%;
+    }
+}

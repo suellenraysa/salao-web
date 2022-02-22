@@ -1,0 +1,303 @@
+/* ESTILO DO CABEÇALHO */
+header{
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+header div.contacts{
+    height: 80px;
+    width: 100vw;
+    color: #fff;
+    background-color: #610d75;
+    position: relative;
+}
+
+header div.contacts .logo{
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+header div.contacts .logo img{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    filter: brightness(10);
+}
+
+header div.contacts .direct-contacts{
+    display: inline;
+    position: absolute;
+    top: 30px;
+    margin-left: 20px;
+}
+
+header div.contacts .direct-contacts span.material-icons{
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+header div.contacts .direct-contacts p{
+    display: inline-block;
+    transform: translateY(-5px);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header div.contacts .hamburguer{
+    display: none;
+}
+
+header div.contacts nav{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 15px;
+}
+
+header div.contacts nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+header div.contacts nav ul li{
+    display: inline-block;
+    height: 30px;
+    color: #fff;
+    transition: all .127s ease;
+}
+
+header div.contacts nav ul li:hover{
+    font-weight: bolder;
+    color: #fcff46;
+}
+
+header div.contacts nav ul li span.material-icons{
+    font-size: 18px;
+}
+
+header div.contacts nav ul li a{
+    display: inline-block;
+    margin-left: 5px;
+    transform: translateY(-3px);
+    color: inherit;
+}
+
+header div.contacts nav ul li button{
+    background: none;
+    border: none;
+    color: #fff;
+    display: inline;
+    margin-left: 5px;
+    transform: translateY(-3px);
+    font-size: 16px;
+}
+
+header div.contacts nav ul li button:hover{
+    font-weight: bolder;
+    color: #fcff46;
+}
+
+header div.background{
+    display: block;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(../../assets/images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+header div.background div.cta-btn{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all .333s ease-in;
+}
+
+header div.background div.cta-btn:hover{
+    background-color: #c500f5;
+    color: #fcff46;
+}
+
+header div.background div.cta-btn a, header div.background div.cta-btn .material-icons{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header div.background div.cta-btn a{
+    display: inline-block;
+    padding: 30px 75px;
+    color: inherit;
+}
+
+header div.background div.cta-btn a .material-icons{
+    display: inline-block;
+    margin-right: 5px;
+    transform: translateY(2px);
+}
+
+header .menu-lateral{
+    display: none;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    header{
+        width: 100vw;
+        background-color: #610d75;
+        position: relative;
+    }
+    
+    header div.contacts{
+        position: relative;
+        width: unset;
+        height: unset;
+        color: #fff;
+        background-color: unset;
+    }
+    
+    header div.contacts .logo{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        /* margin-left: 20px; */
+    }
+    
+    header div.contacts .logo img{
+        display: inline;
+        width: 100%;
+        height: 100%;
+    }
+    
+    header div.contacts .direct-contacts{
+        display: none;
+    }
+    
+    header div.contacts .hamburguer{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    header div.contacts .hamburguer span.material-icons{
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        font-size: 34px;
+    }
+    
+    header div.contacts nav{
+        display: none;
+        position: unset;
+        top: 30px;
+        right: 40px;
+    }
+
+    header div.contacts nav ul{
+        display: block;
+        width: unset;
+    }
+    
+    header div.contacts nav ul li{
+        display: block;
+        height: unset;
+    }
+
+    header div.contacts nav ul li span{
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    header div.contacts nav ul li:hover{
+        font-weight: bolder;
+        color: #fcff46;
+        background-color: #83548e;
+    }
+    
+    header div.contacts nav ul li a{
+        display: inline-block;
+        margin-left: unset;
+        transform: translateY(-7px);
+        color: inherit;
+    }
+
+    header div.contacts nav ul li button:hover{
+        font-weight: bolder;
+        color: #fcff46;
+    }
+
+    header div.contacts .hamburguer + nav.show{
+        display: block;
+    }
+    
+    header div.background{
+        display: none;
+    }
+
+    header .menu-lateral{
+        display: block;
+        width: unset;
+        height: unset;
+        position: unset;
+        background: unset;
+        padding: unset;
+    }
+
+    header div.contacts .hamburguer ~ nav.show .menu-lateral nav{
+        display: block;
+        position: unset;
+        font-size: 15px;
+    }
+
+    header .menu-lateral nav ul{
+        display: block;
+        width: unset;
+    }
+
+    header .menu-lateral nav ul li {
+        display: block;
+        height: unset;
+        color: #fff;
+        transition: all .127s ease;
+    }
+
+    header .menu-lateral nav ul li span {
+        display: inline-block;
+        margin-left: unset;
+        padding: unset;
+        transform: unset;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    header .menu-lateral nav ul li a {
+        display: inline-block;
+        padding: unset;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px){
+    header div.contacts .direct-contacts{
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px){
+    header div.contacts .direct-contacts{
+        display: none;
+    }
+
+    header .menu-lateral{
+        display: none;
+    }
+}

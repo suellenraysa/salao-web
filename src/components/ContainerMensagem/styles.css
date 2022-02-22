@@ -1,0 +1,23 @@
+main .mensagem.main-container{
+    width: 83%;
+    padding: 80px 10px 0 0;
+    margin-left: 330px;
+}
+
+main .mensagem.main-container .title-area{
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 80px);
+}
+
+main .mensagem.main-container .title-area .title-box{
+    border: 1px solid #000;
+    padding: 40px;
+    background-image: linear-gradient(to right, #eee, #ccc);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #111;
+}
+
+main .mensagem.main-container .title-area .title-box .title{
+    font-size: 28px;
+}
