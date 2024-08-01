@@ -43,17 +43,9 @@ Siga os passos abaixo para configurar e executar o projeto localmente:
    npm install
    ```
 
-6. **Inicie o servidor frontend**:
+4. **Inicie o servidor frontend**:
    ```bash
    npm start
    ```
 
-7. **Configuração do Banco de Dados**:
-   - Verifique de ter o Postgres instalado e rodando em sua máquina.
-   - Crie um arquivo `.env` no diretório `backend` e adicione a string de conexão do Postgres:
-     ```
-     DB_HOST=localhost
-     DB_DATABASE=BeautyHair
-     DB_USER=postgres
-     DB_PASSWORD=123456
-     ```
+5. **Esse projeto precisa no Back End para ser visualizado: https://github.com/suellenraysa/salao-api.git**
