@@ -7,7 +7,6 @@ Bem-vindo ao projeto final da faculdade: Sistema de Gerenciamento de Salão de B
 - **Cadastro de Clientes**: Permite o registro de novos clientes com informações pessoais e preferências.
 - **Agendamento de Serviços**: Sistema de agendamento para serviços oferecidos pelo salão, permitindo aos clientes marcar horários com facilidade.
 - **Gerenciamento de Funcionários**: Cadastro e gerenciamento de informações dos funcionários, incluindo horários de trabalho e especialidades.
-- **Controle de Estoque**: Monitoramento e gerenciamento do estoque de produtos utilizados no salão.
 - **Relatórios e Análises**: Geração de relatórios sobre o desempenho do salão, frequência de clientes, serviços mais populares, entre outros.
 
 ## Tecnologias Utilizadas
